@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Siri Vennala — Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <meta name="description" content="Siri Vennala — Entry-level Software Developer | Python, HTML, CSS, Bootstrap" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent: #2575fc;
+      --dark: #0b1220;
+      --muted: #6c757d;
+    }
+    body{
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #111827;
+      background: #f8fafc;
+      padding-top: 70px; /* for fixed navbar */
+    }
+    .hero {
+      min-height: 72vh;
+      display:flex;
+      align-items:center;
+      background: linear-gradient(135deg,#6a11cb 0%, #2575fc 100%);
+      color: #fff;
+      border-radius: 12px;
+      padding: 60px 30px;
+      margin-bottom: 30px;
+    }
+    .hero .name { font-size: 2.4rem; font-weight:700; }
+    .hero .tag { font-size:1.05rem; color: rgba(255,255,255,0.9); }
+    .card-project img { height:160px; object-fit:cover; border-top-left-radius: .375rem; border-top-right-radius: .375rem; }
+    .section-title { font-weight:700; margin-bottom:18px; }
+    .skill-badge { margin:4px 6px 4px 0; }
+    footer { background:#0b1220; color:#fff; padding:18px 0; margin-top:36px; border-radius:8px; text-align:center; }
+    @media (max-width:575px){
+      .hero { padding:40px 18px; min-height:60vh; }
+      .hero .name { font-size:1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Siri Vennala</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="row w-100">
+        <div class="col-lg-7 col-md-8">
+          <div class="name">Siri Vennala Kothuru</div>
+          <div class="tag mt-2">Entry-level Software Developer • Python | HTML | CSS | Bootstrap</div>
+
+          <p class="mt-4" style="color:rgba(255,255,255,0.95);line-height:1.45;">
+            Recent B.Tech graduate with foundation in Python programming and responsive web development. Passionate about solving problems, building practical projects and learning new technologies. Seeking an entry-level role where I can contribute in a collaborative and innovative environment.
+          </p>
+
+          <div class="mt-3">
+            <a class="btn btn-light btn-sm me-2" href="#projects">View Projects</a>
+            <a class="btn btn-outline-light btn-sm" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="mt-3 text-white-50 small">
+            <strong>Phone:</strong> 91-9550204593 ·
+            <strong>Email:</strong> <a href="mailto:ksirivennala55@gmail.com" class="text-white-50">ksirivennala55@gmail.com</a> ·
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/siri-vennala-kothuru-87b7b72bb" class="text-white-50" target="_blank">siri-vennala-kothuru</a>
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-4 d-flex align-items-center justify-content-center">
+          <img src="12.jpg" alt="Profile" class="rounded-circle img-fluid shadow" style="max-width:220px;">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="mb-5">
+      <h3 class="section-title">About Me</h3>
+      <div class="card p-3 shadow-sm">
+        <div class="card-body">
+          <p>
+            I enjoy coding, solving problems and building useful projects. I have hands-on experience with Python programming, and I have built responsive web pages using HTML, CSS and Bootstrap. I'm an active learner — I participated in tech fests, delivered technical presentations, and conducted a mini-workshop on Excel for classmates.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="mb-5">
+      <h3 class="section-title">Projects</h3>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-project h-100 shadow-sm">
+            <img src="13.1.jpg" class="card-img-top" alt="Smart Blind Stick">
+            <div class="card-body">
+              <h5 class="card-title">Smart Blind Stick with Environmental Awareness</h5>
+              <p class="card-text small text-muted">
+                Designed an assistive device using ultrasonic sensors to detect obstacles and provide feedback with buzzers/vibration. Improved navigation and safety for visually impaired users.
+              </p>
+              <a href="#" class="btn btn-sm btn-primary disabled">View Details</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-project h-100 shadow-sm">
+            <img src="https://via.placeholder.com/640x360?text=Form+Design" class="card-img-top" alt="Form Design">
+            <div class="card-body">
+              <h5 class="card-title">Responsive Form Design</h5>
+              <p class="card-text small text-muted">
+                Created accessible and responsive forms using Bootstrap components and custom CSS for clean UI and validation-ready structure.
+              </p>
+              <a href="#" class="btn btn-sm btn-primary disabled">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-3 small text-muted"></p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="mb-5">
+      <h3 class="section-title">Skills</h3>
+      <div class="card p-3 shadow-sm">
+        <div class="card-body">
+          <h6 class="mb-2">Programming & Web</h6>
+          <div class="mb-3">
+            <span class="badge bg-primary skill-badge">Python (basic)</span>
+            <span class="badge bg-primary skill-badge">HTML5</span>
+            <span class="badge bg-primary skill-badge">CSS3</span>
+            <span class="badge bg-primary skill-badge">Bootstrap</span>
+            <span class="badge bg-primary skill-badge">SQL (basic)</span>
+          </div>
+
+          <h6 class="mt-3 mb-2">Tools</h6>
+          <div>
+            <span class="badge bg-secondary skill-badge">VS Code</span>
+            <span class="badge bg-secondary skill-badge">GitHub</span>
+            <span class="badge bg-secondary skill-badge">MS Excel</span>
+            <span class="badge bg-secondary skill-badge">PowerPoint</span>
+          </div>
+
+          <h6 class="mt-3 mb-2">Soft Skills</h6>
+          <div>
+            <span class="badge bg-success skill-badge">Communication</span>
+            <span class="badge bg-success skill-badge">Time Management</span>
+            <span class="badge bg-success skill-badge">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="mb-5">
+      <h3 class="section-title">Education</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card p-3 shadow-sm mb-3">
+            <h6 class="mb-1">B.Tech — Srinivasa Ramanujan Institute of Technology</h6>
+            <p class="small text-muted mb-0">CGPA: 7.1</p>
+            <p class="small text-muted">(2022 — 2026)</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card p-3 shadow-sm mb-3">
+            <h6 class="mb-1">Intermediate — Sri Vision Junior College</h6>
+            <p class="small text-muted mb-0">CGPA: 5.0</p>
+             <p class="small text-muted">(2020 — 2022)</p>
+          </div>
+
+          <div class="card p-3 shadow-sm">
+            <h6 class="mb-1">School — Saint Francis De Sales School</h6>
+            <p class="small text-muted mb-0">CGPA: 8.2</p>
+             <p class="small text-muted">(2020)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="mb-5">
+      <h3 class="section-title">Certificates</h3>
+      <div class="card p-3 shadow-sm">
+        <ul class="mb-0">
+          <li>Smart Grid Basics to Advanced Technologies — NPTEL</li>
+          <li>Employability Skills — Wadhwani Foundation</li>
+          <!-- Add certificate links if available -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- EXTRACURRICULARS -->
+    <section id="extracurriculars" class="mb-5">
+      <h3 class="section-title">Extracurricular Activities</h3>
+      <div class="card p-3 shadow-sm">
+        <ul class="mb-0">
+          <li>Participated in college tech fests solving beginner-level programming problems.</li>
+          <li>Conducted a mini-workshop on Excel basics for classmates.</li>
+          <li>Member of National Service Scheme (NSS).</li>
+          <li>Volunteered in blood donation camps.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+        <div id="contact" class="col-md-6">
+          <div class="card p-3 shadow-sm">
+            <h6>Contact Details</h6>
+            <p class="mb-1"><strong>Phone:</strong> 91-9550204593</p>
+            <p class="mb-1"><strong>Email:</strong> <a href="mailto:ksirivennala55@gmail.com">ksirivennala55@gmail.com</a></p>
+            <p class="mb-0"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/siri-vennala-kothuru-87b7b72bb" target="_blank">siri-vennala-kothuru</a></p>
+            <hr>
+            <p class="small text-muted"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8 text-start">
+            <small>© 2025 Siri Vennala Kothuru — Built with HTML, CSS & Bootstrap</small>
+          </div>
+          <div class="col-md-4 text-end">
+            <small><a href="mailto:ksirivennala55@gmail.com" class="text-white-50">ksirivennala55@gmail.com</a></small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // simple client-only contact form handler (non-emailing).
+    function sendMessage(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      // For now we just show a success note and clear form.
+      const note = document.getElementById('formNote');
+      note.textContent = 'Thanks, ' + (name || 'there') + '! Your message was received (demo). Please email me directly at ksirivennala55@gmail.com for real contact.';
+      document.getElementById('contactForm').reset();
+    }
+  </script>
+
+</body>
+</html>
